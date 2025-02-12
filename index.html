@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Study MBBS Abroad - Apply Now for Top Medical Universities">
+    <title>Study MBBS Abroad</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Hero Section -->
+    <header class="bg-blue-600 text-white text-center py-16">
+        <h1 class="text-4xl font-bold">Study MBBS Abroad</h1>
+        <p class="mt-4 text-lg">Start your medical journey in top countries with affordable fees.</p>
+        <a href="#apply" class="mt-6 inline-block bg-white text-blue-600 font-semibold py-3 px-6 rounded-lg">Apply Now</a>
+    </header>
+    
+    <!-- Why Study MBBS Abroad -->
+    <section class="container mx-auto my-12 p-6 bg-white rounded-lg shadow">
+        <h2 class="text-2xl font-bold text-center mb-6">Why Study MBBS Abroad?</h2>
+        <ul class="list-disc pl-8 text-lg">
+            <li>Affordable tuition fees and living costs</li>
+            <li>Globally recognized medical degrees</li>
+            <li>Modern facilities and experienced faculty</li>
+            <li>Opportunities for international exposure</li>
+        </ul>
+    </section>
+    
+    <!-- Top Countries -->
+    <section class="container mx-auto my-12 p-6 bg-white rounded-lg shadow">
+        <h2 class="text-2xl font-bold text-center mb-6">Top Countries for MBBS</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-6 text-center">
+            <div class="p-4 border rounded-lg">Russia</div>
+            <div class="p-4 border rounded-lg">Uzbekistan</div>
+            <div class="p-4 border rounded-lg">Kazakhstan</div>
+            <div class="p-4 border rounded-lg">Philippines</div>
+            <div class="p-4 border rounded-lg">Georgia</div>
+            <div class="p-4 border rounded-lg">Kyrgyzstan</div>
+            <div class="p-4 border rounded-lg">Egypt</div>
+        </div>
+    </section>
+    
+    <!-- Admission Process -->
+    <section class="container mx-auto my-12 p-6 bg-white rounded-lg shadow">
+        <h2 class="text-2xl font-bold text-center mb-6">Admission Process</h2>
+        <ol class="list-decimal pl-8 text-lg">
+            <li>Choose your preferred country and university</li>
+            <li>Submit required documents (Passport, Transcripts, etc.)</li>
+            <li>Receive university acceptance letter</li>
+            <li>Apply for a student visa</li>
+            <li>Book flight tickets and prepare for departure</li>
+        </ol>
+    </section>
+    
+    <!-- Lead Form -->
+    <section id="apply" class="container mx-auto my-12 p-6 bg-white rounded-lg shadow">
+        <h2 class="text-2xl font-bold text-center mb-6">Apply Now</h2>
+        <form id="leadForm" class="space-y-4">
+            <input type="text" id="name" class="w-full p-3 border rounded" placeholder="Full Name" required>
+            <input type="email" id="email" class="w-full p-3 border rounded" placeholder="Email" required>
+            <input type="tel" id="phone" class="w-full p-3 border rounded" placeholder="Phone" required>
+            <select id="country" class="w-full p-3 border rounded" required>
+                <option value="">Select Country</option>
+                <option>Russia</option>
+                <option>Uzbekistan</option>
+                <option>Kazakhstan</option>
+                <option>Philippines</option>
+                <option>Georgia</option>
+                <option>Kyrgyzstan</option>
+                <option>Egypt</option>
+            </select>
+            <button type="submit" class="w-full bg-blue-600 text-white p-3 rounded">Submit</button>
+        </form>
+    </section>
+    
+    <!-- JavaScript Validation -->
+    <script>
+        document.getElementById('leadForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for your interest! We will contact you soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
